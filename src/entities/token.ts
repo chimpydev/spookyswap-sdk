@@ -72,11 +72,11 @@ export const WETH = {
     'Wrapped FTM'
   ),
   [ChainId.BSC]: new Token(
-    ChainId.GÖRLI,
-    '0x21be370D5312f44cB42ce377BC9b8a0cEF1A4C83',
+    ChainId.BSC,
+    '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c',
     18,
-    'WFTM',
-    'Wrapped FTM'
+    'WBNB',
+    'Wrapped BNB'
   ),
   [ChainId.ETHMAINNET]: new Token(
     ChainId.GÖRLI,
@@ -84,5 +84,12 @@ export const WETH = {
     18,
     'WFTM',
     'Wrapped FTM'
+  ),
+  [ChainId.AVAX]: new Token(
+    ChainId.AVAX,
+    '0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7',
+    18,
+    'WAVAX',
+    'Wrapped AVAX'
   )
 }

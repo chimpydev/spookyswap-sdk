@@ -17,9 +17,10 @@ var _SOLIDITY_TYPE_MAXIMA;
 var ChainId;
 
 (function (ChainId) {
-  ChainId[ChainId["MAINNET"] = 250] = "MAINNET";
+  ChainId[ChainId["G\xD6RLI"] = 5] = "G\xD6RLI";
   ChainId[ChainId["FTMTESTNET"] = 4002] = "FTMTESTNET";
   ChainId[ChainId["ETHMAINNET"] = 1] = "ETHMAINNET";
+  ChainId[ChainId["AVAX"] = 43114] = "AVAX";
   ChainId[ChainId["BSC"] = 56] = "BSC";
 })(ChainId || (ChainId = {}));
 
@@ -438,7 +439,7 @@ function currencyEquals(currencyA, currencyB) {
     return currencyA === currencyB;
   }
 }
-var WETH = (_WETH = {}, _WETH[ChainId.MAINNET] = /*#__PURE__*/new Token(ChainId.MAINNET, '0x21be370D5312f44cB42ce377BC9b8a0cEF1A4C83', 18, 'WFTM', 'Wrapped FTM'), _WETH[ChainId.FTMTESTNET] = /*#__PURE__*/new Token(ChainId.FTMTESTNET, '0xf1277d1Ed8AD466beddF92ef448A132661956621', 18, 'WFTM', 'Wrapped FTM'), _WETH[ChainId.BSC] = /*#__PURE__*/new Token(ChainId.MAINNET, '0x21be370D5312f44cB42ce377BC9b8a0cEF1A4C83', 18, 'WFTM', 'Wrapped FTM'), _WETH[ChainId.ETHMAINNET] = /*#__PURE__*/new Token(ChainId.MAINNET, '0x21be370D5312f44cB42ce377BC9b8a0cEF1A4C83', 18, 'WFTM', 'Wrapped FTM'), _WETH);
+var WETH = (_WETH = {}, _WETH[ChainId.GÖRLI] = /*#__PURE__*/new Token(ChainId.GÖRLI, '0x21be370D5312f44cB42ce377BC9b8a0cEF1A4C83', 18, 'WFTM', 'Wrapped FTM'), _WETH[ChainId.FTMTESTNET] = /*#__PURE__*/new Token(ChainId.FTMTESTNET, '0xf1277d1Ed8AD466beddF92ef448A132661956621', 18, 'WFTM', 'Wrapped FTM'), _WETH[ChainId.BSC] = /*#__PURE__*/new Token(ChainId.BSC, '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c', 18, 'WBNB', 'Wrapped BNB'), _WETH[ChainId.ETHMAINNET] = /*#__PURE__*/new Token(ChainId.GÖRLI, '0x21be370D5312f44cB42ce377BC9b8a0cEF1A4C83', 18, 'WFTM', 'Wrapped FTM'), _WETH[ChainId.AVAX] = /*#__PURE__*/new Token(ChainId.AVAX, '0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7', 18, 'WAVAX', 'Wrapped AVAX'), _WETH);
 
 var _toSignificantRoundin, _toFixedRounding;
 var Decimal = /*#__PURE__*/toFormat(_Decimal);
@@ -1460,7 +1461,7 @@ var Router = /*#__PURE__*/function () {
 }();
 
 var _TOKEN_DECIMALS_CACHE;
-var TOKEN_DECIMALS_CACHE = (_TOKEN_DECIMALS_CACHE = {}, _TOKEN_DECIMALS_CACHE[ChainId.MAINNET] = {
+var TOKEN_DECIMALS_CACHE = (_TOKEN_DECIMALS_CACHE = {}, _TOKEN_DECIMALS_CACHE[ChainId.GÖRLI] = {
   '0xE0B7927c4aF23765Cb51314A0E0521A9645F0E2A': 9 // DGD
 
 }, _TOKEN_DECIMALS_CACHE);

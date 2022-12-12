@@ -4,6 +4,7 @@ export declare enum ChainId {
     GÖRLI = 5,
     FTMTESTNET = 4002,
     ETHMAINNET = 1,
+    AVAX = 43114,
     BSC = 56
 }
 export declare enum TradeType {

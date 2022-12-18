@@ -72,11 +72,18 @@ export const WETH = {
     'Wrapped FTM'
   ),
   [ChainId.BSC]: new Token(
-    ChainId.MAINNET,
+    ChainId.BSC,
     '0x21be370D5312f44cB42ce377BC9b8a0cEF1A4C83',
     18,
-    'WFTM',
-    'Wrapped FTM'
+    'WBNB',
+    'Wrapped BNB'
+  ),
+  [ChainId.ARBITRUM]: new Token(
+    ChainId.ARBITRUM,
+    '0x82aF49447D8a07e3bd95BD0d56f35241523fBab1',
+    18,
+    'WETH',
+    'Wrapped Ether'
   ),
   [ChainId.ETHMAINNET]: new Token(
     ChainId.MAINNET,

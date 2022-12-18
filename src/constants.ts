@@ -7,7 +7,8 @@ export enum ChainId {
   MAINNET = 250,
   FTMTESTNET = 4002,
   ETHMAINNET = 1,
-  BSC = 56
+  BSC = 56,
+  ARBITRUM = 42161
 }
 
 export enum TradeType {

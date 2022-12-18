@@ -25,6 +25,7 @@ var _SOLIDITY_TYPE_MAXIMA;
   ChainId[ChainId["FTMTESTNET"] = 4002] = "FTMTESTNET";
   ChainId[ChainId["ETHMAINNET"] = 1] = "ETHMAINNET";
   ChainId[ChainId["BSC"] = 56] = "BSC";
+  ChainId[ChainId["ARBITRUM"] = 42161] = "ARBITRUM";
 })(exports.ChainId || (exports.ChainId = {}));
 
 (function (TradeType) {
@@ -438,7 +439,7 @@ function currencyEquals(currencyA, currencyB) {
     return currencyA === currencyB;
   }
 }
-var WETH = (_WETH = {}, _WETH[exports.ChainId.MAINNET] = /*#__PURE__*/new Token(exports.ChainId.MAINNET, '0x21be370D5312f44cB42ce377BC9b8a0cEF1A4C83', 18, 'WFTM', 'Wrapped FTM'), _WETH[exports.ChainId.FTMTESTNET] = /*#__PURE__*/new Token(exports.ChainId.FTMTESTNET, '0xf1277d1Ed8AD466beddF92ef448A132661956621', 18, 'WFTM', 'Wrapped FTM'), _WETH[exports.ChainId.BSC] = /*#__PURE__*/new Token(exports.ChainId.MAINNET, '0x21be370D5312f44cB42ce377BC9b8a0cEF1A4C83', 18, 'WFTM', 'Wrapped FTM'), _WETH[exports.ChainId.ETHMAINNET] = /*#__PURE__*/new Token(exports.ChainId.MAINNET, '0x21be370D5312f44cB42ce377BC9b8a0cEF1A4C83', 18, 'WFTM', 'Wrapped FTM'), _WETH);
+var WETH = (_WETH = {}, _WETH[exports.ChainId.MAINNET] = /*#__PURE__*/new Token(exports.ChainId.MAINNET, '0x21be370D5312f44cB42ce377BC9b8a0cEF1A4C83', 18, 'WFTM', 'Wrapped FTM'), _WETH[exports.ChainId.FTMTESTNET] = /*#__PURE__*/new Token(exports.ChainId.FTMTESTNET, '0xf1277d1Ed8AD466beddF92ef448A132661956621', 18, 'WFTM', 'Wrapped FTM'), _WETH[exports.ChainId.BSC] = /*#__PURE__*/new Token(exports.ChainId.BSC, '0x21be370D5312f44cB42ce377BC9b8a0cEF1A4C83', 18, 'WBNB', 'Wrapped BNB'), _WETH[exports.ChainId.ARBITRUM] = /*#__PURE__*/new Token(exports.ChainId.ARBITRUM, '0x82aF49447D8a07e3bd95BD0d56f35241523fBab1', 18, 'WETH', 'Wrapped Ether'), _WETH[exports.ChainId.ETHMAINNET] = /*#__PURE__*/new Token(exports.ChainId.MAINNET, '0x21be370D5312f44cB42ce377BC9b8a0cEF1A4C83', 18, 'WFTM', 'Wrapped FTM'), _WETH);
 
 var _toSignificantRoundin, _toFixedRounding;
 var Decimal = /*#__PURE__*/toFormat(_Decimal);
